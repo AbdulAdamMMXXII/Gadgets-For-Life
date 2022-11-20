@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadgets4Life</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+        
+</style>
+<script type="text/javascript" src="javascript.js">
+</script> 
+<style>
+    /*Calender stylsheet*/
+.main {
+    border:1px solid black;
+    }
+    
+    .month {
+    background-color:rgb(0, 0, 0);
+    font:bold 12px verdana;
+    color:white;
+    }
+    
+    .daysofweek {
+    background-color:rgb(224, 85, 85);
+    font:bold 12px verdana;
+    color:white;
+    }
+    
+    .days {
+    font-size: 12px;
+    font-family:verdana;
+    color:black;
+    background-color: lightyellow;
+    padding: 2px;
+    }
+    
+    .days #today{
+    font-weight: bold;
+    color: red;
+    }
+</style>
+</head>
+<body>
+    <!--Navigation bar section-->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" id="navbar-logo">Gadgets4Life</a>
+            <div class="navbar-toggle" id="gadgets-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-links">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="devices.html" class="navbar-links">Devices</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="accessories.html" class="navbar-links">Accessories</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="pcs-laptops.html" class="navbar-links">PC's & Laptops</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="tvs.html" class="navbar-links">Televisions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact-us.html" class="navbar-links">Contact us</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="/" class="button">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Main Section-->
+    <div class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1>Gadgets4Life is happy</h1>
+                <h2>To receive your queries and help you out with any isues you may have regarding the products and service</h2>
+                <p>See our outstanding new arrivals.</p>
+                <button class="main-btn"><a href="index.html">View</a></button>
+            </div>
+            <div class="main-img-container">
+                <img src="Images/undraw_in_sync_re_jlqd.svg" alt="" id="main-img">
+            </div>
+        </div>
+    </div>
+    <div class="feedback-section">
+        <feedback> Feedback and comment section</feedback>
+        <form method="post" action="mailto:bmc181906751@student.bmet.ac">
+
+            Name:<input type="text" name="Username"> <br>
+            Email: <input type="text" name="Name"> <br>
+              Comments <br>
+              <textarea name="COMMENTS" rows="10" wrap="hard">
+              </textarea>
+              <input name="redirect" type="hidden" value="index.html">
+              <input name="NEXT_URL" type="hidden" value="index.html">
+              <br>
+              <input type="submit" value="Send">
+              <input type="reset" value="Clear">
+           
+                   
+        </form><!-- END OF FORM -->
+    </div>
+    <section class="maps">
+        <h2>
+            <p>Opening times</p>
+            <p>Monday to Frinday</p>
+            <p>09:00 - 18:00</p>
+            <script type="text/javascript">
+
+                var todaydate=new Date()
+                var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+                var curyear=todaydate.getFullYear() //get current year
+                
+                document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1));
+
+                </script>
+        </h2>
+        <h3>
+            You can vist us via our guidance maps here.
+        </h3>
+        <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1214.8257591456193!2d-1.9028289126315883!3d52.48544507591167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc923e88f80d%3A0x5a47575279e1cb82!2sWater%20St%20(Stop%20CN3)!5e0!3m2!1sen!2suk!4v1665514800919!5m2!1sen!2suk" width="1024" height="512" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!--Footer Section-->
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wraper">
+                <div class="footer-link-items">
+                    <h2>About Us</h2>
+                    <a href="#Sign-up">Trade in</a>
+                    <a href="#">Televisions</a>
+                    <a href="#">PC's and Laptops</a>
+                    <a href="#">Mobile phones</a>
+                    <a href="#">Terms and conditions</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Our company</h2>
+                    <a href="#">Business</a>
+                    <a href="#">Support</a>
+                    <a href="#">Subscribtions</a>
+                    <a href="#">membership</a>
+                </div>
+            </div>
+            <div class="footer-link-wraper">
+                <div class="footer-link-items">
+                    <h2>Useful links</h2>
+                    <a href="#">G4L Community</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Staying safe online</a>
+                    <a href="#">Insurance & protection</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Find us at</h2>
+                    <a href="https://linkedin.com/login">Linked In</a>
+                    <a href="https://twitter.com/login">Twitter</a>
+                    <a href="https://instagram.com/login">Instagram</a>
+                    <a href="https://facebook.com/login">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="find-us">
+            <div class="find-us-wrap">
+            <div class="footer-logo">
+                <a href="#" id="footer-logo"><i class="fas fa-gem"></i>Gadgets4Life</a>
+            </div>
+            <p class="website-rights">© Gadgets4Life 2023. All rights reserved</p>
+            <div class="social-logos">
+                <a href="#" class="social-logo-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-logo-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-logo-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-logo-link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
